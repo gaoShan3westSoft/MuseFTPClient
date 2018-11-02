@@ -12,7 +12,7 @@ def main():
         except:
             print('您输入的信息有误')
             #  字符串数据类型的方法  login register quit
-        if hasattr(Auth,func_str):    # 登录 注册
+        if hasattr(Auth,func_str):
             auth_obj = Auth()
             func = getattr(auth_obj,func_str)
             ret = func()
